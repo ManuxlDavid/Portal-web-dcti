@@ -208,11 +208,14 @@ form {
 .delete-button {
   margin-right: 10px;
   top: 85%;
-  left: 70%;
+  left: 75%;
 }
 .publish-button {
-  top: 43%;
+  top: 57%;
   right: 50%;
+}
+.t_i {
+  top: 65%;
 }
 }
 

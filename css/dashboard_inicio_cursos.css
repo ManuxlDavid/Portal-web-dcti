@@ -120,6 +120,7 @@ form {
 .t_n, .t_i {
   color: #a8aeb8;
   position: absolute;
+  font-size: 80%;
 }
 .t_n {
   top: 0;
@@ -132,7 +133,7 @@ form {
 @media (min-width: 300px) and (max-width: 500px) {
 .content-d {
   width: 70%;
-  margin-left: 25%;
+  margin-left: 29%;
   margin-top: 2%;
 }
 form {

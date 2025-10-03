@@ -117,12 +117,30 @@ list-style:none;
 }
 
 @media (min-width: 300px) and (max-width: 700px) {
+#menu_h:checked + .ul_h {
+  width: 22%;
+}
 .ul_h {
-  font-size: 70%;
-  width: 50px;
+  font-size: 60%;
+  width: 20px;
+}
+.nav_h {
+  padding: 0 10px;
+}
+.li_h {
+  margin: 10px 0;
+  padding: 0;
+}
+.flex {
+  margin: 10px 0;
+  padding: 0;
+}
+.list-icon {
+  width: 20px;
 }
 .icon_h {
   width: 20px;
+  margin-right: 10px;
   height: 20px;
 }
 /* submenu */
@@ -135,7 +153,13 @@ list-style:none;
 
 @media (min-width: 701px) and (max-width: 900px) {
 .ul_h {
-  font-size: 80%;
+  font-size: 70%;
+  width: 50px;
+}
+.icon_h {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
 }
   #menu_h:checked + .ul_h {
   width: 20%;

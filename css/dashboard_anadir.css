@@ -212,8 +212,11 @@ form {
   left: 70%;
 }
 .publish-button {
-  top: 43%;
+  top: 45%;
   right: 50%;
+}
+.t_i {
+  top: 52%;
 }
 }
 
