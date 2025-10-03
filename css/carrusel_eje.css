@@ -1,0 +1,337 @@
+/* Carrusel eje */
+.carrusel-eje1,
+.carrusel-eje2,
+.carrusel-eje3,
+.carrusel-eje4,
+.carrusel-eje5,
+.carrusel-eje6 {
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 5px 3px 10px #a7a7a7;
+  position: relative;
+}
+
+.eje-contenedor1,
+.eje-contenedor2,
+.eje-contenedor3,
+.eje-contenedor4,
+.eje-contenedor5,
+.eje-contenedor6 {
+  display: flex;
+  width: 300%;
+  animation: desplazamiento 30s infinite linear;
+}
+
+.eje1,
+.eje2,
+.eje3,
+.eje4,
+.eje5,
+.eje6 {
+  width: 33.33%;
+  object-fit: cover;
+  display: flex;
+}
+
+.eje1 img,
+.eje2 img,
+.eje3 img,
+.eje4 img,
+.eje5 img,
+.eje6 img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.contenido-eje1,
+.contenido-eje2,
+.contenido-eje3,
+.contenido-eje4,
+.contenido-eje5,
+.contenido-eje6 {
+  flex: 1;
+  padding: 2% 2% 2% 1%;
+  width: 250px;
+  background: #ffffff;
+}
+
+/* Botones de navegación */
+.dots-container-eje1,
+.dots-container-eje2,
+.dots-container-eje3,
+.dots-container-eje4,
+.dots-container-eje5,
+.dots-container-eje6 {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: flex; /* Asegúrate de que los puntos se alineen horizontalmente */
+  z-index: 1; /* Asegurarse de que los puntos estén por encima de las imágenes */
+}
+
+.dots-container-eje1 .dot-eje1,
+.dots-container-eje2 .dot-eje2,
+.dots-container-eje3 .dot-eje3,
+.dots-container-eje4 .dot-eje4,
+.dots-container-eje5 .dot-eje5,
+.dots-container-eje6 .dot-eje6 {
+  width: 10px;
+  height: 10px;
+  background-color: #ad1cacb2;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 3px;
+  user-select: none;
+  transition: background-color 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+.dots-container-eje1 .dot-eje1.active,
+.dots-container-eje2 .dot-eje2.active,
+.dots-container-eje3 .dot-eje3.active,
+.dots-container-eje4 .dot-eje4.active,
+.dots-container-eje5 .dot-eje5.active,
+.dots-container-eje6 .dot-eje6.active {
+  background-color: #f91cac;
+}
+
+.dots-container-eje1 .dot-eje1:hover,
+.dots-container-eje2 .dot-eje2:hover,
+.dots-container-eje3 .dot-eje3:hover,
+.dots-container-eje4 .dot-eje4:hover,
+.dots-container-eje5 .dot-eje5:hover,
+.dots-container-eje6 .dot-eje6:hover {
+  box-shadow: 0 0 10px #f91cac;
+  background-color: #f91cac;
+  border: 2px solid #ffffff;
+}
+
+@media (max-width: 700px) {
+/* Carrusel eje */
+.carrusel-eje1,
+.carrusel-eje2,
+.carrusel-eje3,
+.carrusel-eje4,
+.carrusel-eje5,
+.carrusel-eje6 {
+  width: 90%;
+  min-height: 300px;
+  font-size: 60%;
+  margin: 3% auto 4% auto;
+}
+
+.carrusel-eje2,
+.carrusel-eje4,
+.carrusel-eje6 {
+  margin: 3% auto 4% auto;
+}
+
+.eje1,
+.eje2,
+.eje3,
+.eje4,
+.eje5,
+.eje6 {
+  min-height: 300px;
+}
+
+.contenido-eje1,
+.contenido-eje2,
+.contenido-eje3,
+.contenido-eje4,
+.contenido-eje5,
+.contenido-eje6 {
+  width: 100%;
+  padding: 10px;
+}
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+.eje1 img,
+.eje2 img,
+.eje3 img,
+.eje4 img,
+.eje5 img,
+.eje6 img {
+  display: none;
+}
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+.eje1 img,
+.eje2 img,
+.eje3 img,
+.eje4 img,
+.eje5 img,
+.eje6 img {
+  width: 40%;
+  height: 300px;
+}
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+/* Carrusel eje */
+.carrusel-eje1,
+.carrusel-eje2,
+.carrusel-eje3,
+.carrusel-eje4,
+.carrusel-eje5,
+.carrusel-eje6 {
+  width: 90%;
+  min-height: 300px;
+  font-size: 70%;
+  margin: 3% auto 4% auto;
+}
+
+.carrusel-eje2,
+.carrusel-eje4,
+.carrusel-eje6 {
+  margin: 3% auto 4% auto;
+}
+
+.eje1,
+.eje2,
+.eje3,
+.eje4,
+.eje5,
+.eje6 {
+  min-height: 300px;
+}
+
+.eje1 img,
+.eje2 img,
+.eje3 img,
+.eje4 img,
+.eje5 img,
+.eje6 img {
+  height: 300px;
+}
+
+.contenido-eje1,
+.contenido-eje2,
+.contenido-eje3,
+.contenido-eje4,
+.contenido-eje5,
+.contenido-eje6 {
+  width: 100%;
+  padding: 10px;
+}
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+/* Carrusel eje */
+.carrusel-eje1,
+.carrusel-eje2,
+.carrusel-eje3,
+.carrusel-eje4,
+.carrusel-eje5,
+.carrusel-eje6 {
+  width: 80%;
+  min-height: 300px;
+  font-size: 80%;
+  margin: 3% 3% 4% 3%;
+}
+
+.carrusel-eje2,
+.carrusel-eje4,
+.carrusel-eje6 {
+  margin: 3% 3% 4% 17%;
+}
+
+.eje1,
+.eje2,
+.eje3,
+.eje4,
+.eje5,
+.eje6 {
+  min-height: 300px;
+}
+
+.eje1 img,
+.eje2 img,
+.eje3 img,
+.eje4 img,
+.eje5 img,
+.eje6 img {
+  height: 300px;
+}
+}
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+/* Carrusel eje */
+.carrusel-eje1,
+.carrusel-eje2,
+.carrusel-eje3,
+.carrusel-eje4,
+.carrusel-eje5,
+.carrusel-eje6 {
+  width: 70%;
+  min-height: 300px;
+  font-size: 90%;
+  margin: 3% 3% 4% 3%;
+}
+
+.carrusel-eje2,
+.carrusel-eje4,
+.carrusel-eje6 {
+  margin: 3% 3% 4% 27%;
+}
+
+.eje1,
+.eje2,
+.eje3,
+.eje4,
+.eje5,
+.eje6 {
+  min-height: 300px;
+}
+
+.eje1 img,
+.eje2 img,
+.eje3 img,
+.eje4 img,
+.eje5 img,
+.eje6 img {
+  height: 300px;
+}
+
+}
+
+@media (min-width: 1301px) {
+/* Carrusel eje */
+.carrusel-eje1,
+.carrusel-eje2,
+.carrusel-eje3,
+.carrusel-eje4,
+.carrusel-eje5,
+.carrusel-eje6 {
+  width: 70%;
+  min-height: 350px;
+  font-size: 100%;
+  margin: 3% 3% 4% 3%;
+}
+
+.carrusel-eje2,
+.carrusel-eje4,
+.carrusel-eje6 {
+  margin: 3% 3% 4% 27%;
+}
+
+.eje1,
+.eje2,
+.eje3,
+.eje4,
+.eje5,
+.eje6 {
+  min-height: 350px;
+}
+
+.eje1 img,
+.eje2 img,
+.eje3 img,
+.eje4 img,
+.eje5 img,
+.eje6 img {
+  height: 350px;
+}
+}

@@ -1,0 +1,32 @@
+/* Carrusel Miniaturas */
+.carrusel-miniaturas {
+  margin-top: 1%;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.miniaturas-contenedor {
+  width: 200%;
+  height: 100%;
+  max-height: 250px;
+  display: flex;
+  transition: transform 0.6s ease; /* Transición suave para el movimiento */
+}
+
+.miniaturasc {
+  width: calc(100%/4); /* Muestra 4 imágenes a la vez y resta el margen */
+  padding: 10px;
+  max-height: 250px;
+  border-radius: 10px;
+}
+
+.miniaturasc img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}

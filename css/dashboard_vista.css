@@ -1,0 +1,14 @@
+body {
+  height: 100vh;
+}
+.delete-button {
+  top: 90%;
+  left: 83%;
+  background-color: var(--rosa);
+  color: var(--gris);
+  margin-right: 10px;
+}
+.delete-button:hover {
+  background-color: #b126be;
+  color: #ffffff;
+}

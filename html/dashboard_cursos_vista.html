@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portal_Web_DCTI/dashboard/cursos/vista_previa</title>
+  <link rel="stylesheet" href="../css/css.css">
+  <link rel="stylesheet" href="../css/menu_dashboard.css">
+  <link rel="stylesheet" href="../css/dashboard_carrusel.css">
+  <link rel="stylesheet" href="../css/dashboard_vista.css">
+</head>
+<body>
+  <header class="header_h">
+    <nav class="nav_h">
+      <label for="menu_h" class="label_h">
+        <img src="../img/menu.png" alt="menu_h" class="list-icon">
+      </label>
+      <input type="checkbox" name="hamburguesa" id="menu_h">
+      <ul class="ul_h">
+        <li class="li_h"><a href="" class="a_h"><label for="menu_h"><img src="../img/flecha.png" alt="flecha" class="icon_h"></label>Resumen General</a></li>
+        <li class="li_h"><a href="dashboard_gestion_usuarios.html" class="a_h"><label for="menu_h"><img src="../img/usuarios2.png" alt="usuario" class="icon_h"></label>Gestión de Usuarios</a></li>
+        <li>
+          <div class="flex"><label for="menu_h"><img src="../img/home.png" alt="home" class="icon_h"></label><label for="menu_b" class="a_h l_c">Inicio</label></div>
+          <input type="checkbox" name="menu_b" id="menu_b">
+          <ul class="ul_c">
+            <li class="li_c"><a href="dashboard_inicio_noticias.html" class="a_c">Noticias</a></li>
+            <li class="li_c"><a href="dashboard_inicio_cursos.html" class="a_c">Cursos</a></li>
+            <li class="li_c"><a href="dashboard_inicio_proyectos.html" class="a_c">Proyectos</a></li>
+          </ul>
+        </li>
+        <li class="li_h"><a href="dashboard_mision.html" class="a_h"><label for="menu_h"><img src="../img/cuadrados.png" alt="cuadrados" class="icon_h"></label>DCTI</a></li>
+        <li class="li_h"><a href="dashboard_eje_de_gestion.html" class="a_h"><label for="menu_h"><img src="../img/esquema.png" alt="esquema" class="icon_h"></label>Ejes de Gestión</a></li>
+        <li>
+          <div class="flex"><label for="menu_h"><img src="../img/importancia.png" alt="exclamacion" class="icon_h"></label><label for="menu_c" class="a_h l_c">Noticias</label></div>
+          <input type="checkbox" name="menu_c" id="menu_c">
+          <ul class="ul_c">
+            <li class="li_c"><a href="dashboard_noticias_carrusel.html" class="a_c">Carrusel</a></li>
+            <li class="li_c"><a href="dashboard_noticias_institucionales.html" class="a_c">Añadir noticias institucionales</a></li>
+            <li class="li_c"><a href="dashboard_noticias_locales.html" class="a_c">Añadir noticias locales</a></li>
+            <li class="li_c"><a href="dashboard_noticias_regionales.html" class="a_c">Añadir noticias regionales</a></li>
+            <li class="li_c"><a href="dashborad_noticias_nacionales.html" class="a_c">Añadir noticias nacionales</a></li>
+            <li class="li_c"><a href="dashboard_noticias_internacionales.html" class="a_c">Añadir noticias internacionales</a></li>
+          </ul>
+        </li>
+        <li class="li_h"><a href="dashboard_contactos.html" class="a_h"><label for="menu_h"><img src="../img/mensaje.png" alt="mensaje" class="icon_h"></label>Contactos</a></li>
+        <li class="li_h"><a href="" class="a_h"><label for="menu_h"><img src="../img/reporte.png" alt="reporte" class="icon_h"></label>Reportes</a></li>
+      </ul>
+      <a href=""><img src="../img/usuario.png" alt="inicio" class="user_img" width="40px"></a>
+    </nav>
+  </header>
+  <main>
+    <div class="content-d">
+  <form action="" enctype="multipart/form-data">
+    <!-- Área de carga de imágenes -->
+    <div class="image-upload-area">
+      <div class="main-image-preview"></div>
+      <label for="file-input" class="image-upload-button" id="upload-button">+</label>
+      <input type="file" id="file-input" class="hidden" accept="image/*" onchange="previewImage(this)">
+      <div class="image-preview-container">
+        <div class="image-preview"></div>
+        <div class="image-preview"></div>
+        <div class="image-preview"></div>
+        <div class="image-preview"></div>
+        <div class="image-preview"></div>
+        <div class="image-preview"></div>
+      </div>
+    </div>
+    <!-- Título -->
+    <input type="text" class="title-input"/>
+    <!-- Botones -->
+    <div class="button-container">
+      <button type="button" class="delete-button">Borrar</button>
+      <button type="submit" class="publish-button">Publicar</button>
+    </div>
+  </form>
+</div>
+
+  </main>
+  <script src="../js/dashboard_vista.js"></script>
+</body>
+</html>

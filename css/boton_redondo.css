@@ -1,0 +1,29 @@
+/* Botón de noticias */
+.dots-container {
+  position: absolute;
+  left: 60%;
+  bottom: 12px;
+  transform: translate(-50%);
+  display: flex; /* Asegúrate de que los puntos se alineen horizontalmente */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ad1cacb2;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 3px;
+  user-select: none;
+  transition: background-color 0.3s; /* Transición para el color */
+}
+
+.dot.active {
+  background-color: #f91cac; /* Color para el punto activo */
+}
+
+.dot:hover{
+  box-shadow: 0 0 10px #f91cac;
+  background-color: #f91cac;
+  border: 2px solid #ffffff;
+}

@@ -1,0 +1,132 @@
+/* Carrusel Principal */
+.carrusel-principal {
+  margin-bottom: 2%;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 3px 10px #a7a7a7;
+}
+
+.carrusel-contenedor {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.ccp {
+  width: calc(100%/4);
+  position: relative;
+}
+
+.tc {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.imgc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+/* Carrusel Principal */
+.carrusel-principal {
+  min-height: 200px;
+  max-height: 240px;
+}
+
+.tc {
+  bottom: 20px;
+  font-size: 100%;
+}
+.imgc img {
+  min-height: 200px;
+  max-height: 200px;
+}
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+/* Carrusel Principal */
+.carrusel-principal {
+  min-height: 300px;
+}
+
+.tc {
+  bottom: 25px;
+  font-size: 130%;
+}
+.imgc img {
+  min-height: 300px;
+  max-height: 300px;
+}
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+/* Carrusel Principal */
+.carrusel-principal {
+  min-height: 400px;
+}
+
+.tc {
+  bottom: 30px;
+  font-size: 150%;
+}
+.imgc img {
+  min-height: 400px;
+  max-height: 400px;
+}
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+/* Carrusel Principal */
+.carrusel-principal {
+  min-height: 500px;
+}
+
+.tc {
+  bottom: 35px;
+  font-size: 180%;
+}
+.imgc img {
+  min-height: 500px;
+  max-height: 500px;
+}
+}
+
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+/* Carrusel Principal */
+.carrusel-principal {
+  min-height: 500px;
+  max-height: 500px;
+}
+
+.tc {
+  bottom: 40px;
+  font-size: 190%;
+}
+.imgc img {
+  min-height: 500px;
+  max-height: 500px;
+}
+}
+
+@media (min-width: 1301px) {
+/* Carrusel Principal */
+.carrusel-principal {
+  min-height: 600px;
+  max-height: 600px;
+}
+
+.tc {
+  bottom: 50px;
+  font-size: 200%;
+}
+.imgc img {
+  min-height: 600px;
+  max-height: 600px;
+}
+}

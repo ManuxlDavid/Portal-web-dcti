@@ -1,0 +1,45 @@
+/* botones del carrusel Principal */
+.btn-left, .btn-right, .btn-left-m, .btn-right-m {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  background-color: #00000082;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff81;
+  transform: translateX(0,50%);
+  transition: .5s ease;
+  user-select: none;
+}
+
+.btn-left, .btn-left-m {
+  left: 10px;
+}
+
+.btn-right, .btn-right-m {
+  right: 10px;
+}
+
+.btn-left:hover,
+.btn-right:hover,
+.btn-left-m:hover,
+.btn-right-m:hover {
+  color: #ffffff;
+}
+
+
+@media (min-width: 300px) and (max-width: 500px) {
+/* botones del carrusel Principal */
+.btn-left, .btn-right, .btn-left-m, .btn-right-m {
+  font-size: 10px;
+  padding: 4px;
+}
+}
+
+@media (min-width: 501px) {
+/* botones del carrusel Principal */
+.btn-left, .btn-right, .btn-left-m, .btn-right-m {
+  font-size: 20px;
+  padding: 5px;
+}
+}

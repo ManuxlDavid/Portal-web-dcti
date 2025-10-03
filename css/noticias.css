@@ -1,0 +1,159 @@
+/* noticias de las noticias y proyectos */
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 2% 2% 2%;
+}
+
+.course-container-noticias2{
+  background-color: #a01cad;
+  padding-top: 30px;
+}
+
+.noticias,
+.course-container-noticia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 2 2% 2% 2%;
+  margin-bottom: 2%;
+}
+
+.course-item {
+  width: 25%;
+  margin: 1%;
+  background-color: #fdfdfd;
+  border-bottom: 5px solid #000000;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.course-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.course-item h2 {
+  margin: 16px;
+  color: #0656c5;
+}
+
+.titulo_noticia {
+  width: 70%;
+  padding: 10px 40px;
+  margin-bottom: 10px;
+  background-color: #530e90;
+  color: #ffffff;
+}
+
+.titulo_noticia h2 {
+  margin-right: 30px;
+}
+
+@media (max-width: 700px) {
+.noticias {
+  flex-direction: column;
+}
+
+.course-item {
+  margin: 0 auto;
+}
+
+.titulo_noticia {
+  padding: 5px 20px;
+}
+
+.titulo_noticia h2 {
+  font-size: 100%;
+}
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+.course-item {
+  min-width: 250px;
+  max-height: 250px;
+}
+
+.course-item img {
+  height: 150px;
+}
+
+.course-item h2 {
+  font-size: 80%;
+}
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+.course-item {
+  min-width: 350px;
+  max-height: 300px;
+}
+
+.course-item img {
+  height: 200px;
+}
+
+.course-item h2 {
+  font-size: 90%;
+}
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+.titulo_noticia h2 {
+  font-size: 120%;
+}
+
+.course-item {
+  min-width: 150px;
+  max-height: 200px;
+}
+
+.course-item img {
+  height: 100px;
+}
+
+.course-item h2 {
+  font-size: 70%;
+}
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+.titulo_noticia h2 {
+  font-size: 130%;
+}
+
+.course-item {
+  min-width: 250px;
+  max-height: 300px;
+}
+
+.course-item img {
+  height: 150px;
+}
+
+.course-item h2 {
+  font-size: 80%;
+}
+}
+
+@media (min-width: 1101px) {
+.titulo_noticia h2 {
+  font-size: 150%;
+}
+
+.course-item {
+  min-width: 300px;
+  max-height: 350px;
+}
+
+.course-item img {
+  height: 200px;
+}
+
+.course-item h2 {
+  font-size: 100%;
+}
+}

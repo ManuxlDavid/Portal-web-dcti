@@ -1,0 +1,310 @@
+.formularios {
+  width: 75%;
+  margin-left: 25%;
+  margin-top: 2%;
+  position: relative;
+}
+.cont-d {
+  position: absolute;
+}
+.h2 {
+  background-color: #0656c5;
+  color: #dbe1ec;
+  padding: 5px 20px;
+  margin-bottom: 1%;
+  width: 25%;
+}
+.f_d {
+  margin-bottom: 1%;
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+.t_d {
+  width: 50%;
+  background-color: #c1d5f0;
+  border: 0;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: Verdana;
+}
+.t_d::placeholder {
+  color: #ffffff;
+  padding: 10px;
+}
+.t_d:focus {
+  outline: none;
+}
+.s_d {
+  width: 10%;
+  height: 30px;
+  margin-left: 20px;
+  color: #dbe1ec;
+  background-color: #20ad1c;
+  border: 0;
+  font-size: 110%;
+  transition: all .3s;
+  cursor: pointer;
+  position: absolute;
+}
+.s_d:hover {
+  background-color: #2bc327;
+  color: #ffffff;
+}
+.r_d {
+  width: 10%;
+  height: 30px;
+  margin-left: 20px;
+  color: #dbe1ec;
+  background-color: #a01cad;
+  border: 0;
+  font-size: 110%;
+  transition: all .3s;
+  cursor: pointer;
+  position: absolute;
+}
+.r_d:hover {
+  background-color: #b126be;
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+.formularios {
+  width: 75%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+.h2 {
+  padding: 5px 20px;
+  margin-bottom: 1%;
+  width: 25%;
+}
+.f_d {
+  margin-bottom: 1%;
+}
+.t_d {
+  width: 50%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.s_d {
+  width: 10%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 110%;
+}
+.r_d {
+  width: 10%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 110%;
+}
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+
+.h2 {
+  width: 50%;
+  font-size: 80%;
+}
+.f_d {
+  margin-bottom: 15%;
+  position: relative;
+}
+.t_d {
+  width: 70%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.s_d {
+  width: 25%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 80%;
+  position: absolute;
+  top: 105%;
+}
+.r_d {
+  width: 25%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 80%;
+  position: absolute;
+  top: 105%;
+  left: 30%;
+}
+.cont-d {
+  width: 70%;
+  margin-top: 5%;
+}
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+.h2 {
+  width: 50%;
+  font-size: 80%;
+}
+.f_d {
+  margin-bottom: 10%;
+  position: relative;
+}
+.t_d {
+  width: 70%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.s_d {
+  width: 25%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 80%;
+  position: absolute;
+  top: 105%;
+}
+.r_d {
+  width: 25%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 80%;
+  position: absolute;
+  top: 105%;
+  left: 30%;
+}
+.cont-d {
+  width: 70%;
+  margin-top: 5%;
+}
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+.formularios {
+  width: 60%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+.h2 {
+  width: 50%;
+  font-size: 100%;
+}
+.f_d {
+  margin-bottom: 1%;
+}
+.t_d {
+  width: 40%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.s_d {
+  width: 15%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 100%;
+  top: 50%;
+  left: 40%;
+}
+.r_d {
+  width: 15%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 100%;
+  top: 80%;
+  left: 40%;
+}
+.cont-d {
+  width: 50%;
+  top: 5%;
+  left: 65%;
+}
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+.formularios {
+  width: 70%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+.h2 {
+  width: 30%;
+  font-size: 100%;
+}
+.f_d {
+  margin-bottom: 1%;
+}
+.t_d {
+  width: 40%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.s_d {
+  width: 15%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 100%;
+  top: 50%;
+  left: 40%;
+}
+.r_d {
+  width: 15%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 100%;
+  top: 80%;
+  left: 40%;
+}
+.cont-d {
+  width: 50%;
+  top: 5%;
+  left: 65%;
+}
+}
+
+
+@media (min-width: 1101px) {
+.formularios {
+  width: 60%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+.h2 {
+  width: 30%;
+  font-size: 100%;
+}
+.f_d {
+  margin-bottom: 1%;
+}
+.t_d {
+  width: 40%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.s_d {
+  width: 15%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 100%;
+  top: 50%;
+  left: 40%;
+}
+.r_d {
+  width: 15%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 100%;
+  top: 80%;
+  left: 40%;
+}
+.cont-d {
+  width: 50%;
+  top: 5%;
+  left: 65%;
+}
+}

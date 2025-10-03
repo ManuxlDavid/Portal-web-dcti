@@ -1,0 +1,423 @@
+:root {
+  --morado: #530e90;
+  --rosa: #a01cad;
+  --azul_o: #021d41;
+  --azul_c: #0656c5;
+  --azul_p: #c1d5f0;
+  --gris: #dbe1ec;
+  --verde: #20ad1c;
+  --top: 80px;
+}
+body {
+  height: 100vh;
+}
+.content-d {
+  position: relative;
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+}
+form {
+  width: 100%;
+}
+.image-upload-area {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 4%;
+  margin-left: 2%;
+}
+.image-preview-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  width: 40%;
+  height: 250px;
+  margin-left: 50px;
+}
+.image-preview {
+  background-color: var(--azul_c);
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+}
+.main-image-preview {
+  width: 25%;
+  border-radius: 5px;
+  height: 200px;
+  background-color: var(--azul_p);
+  background-size: cover;
+}
+.image-upload-button {
+  position: absolute;
+  top: 90%;
+  left: 22%;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: var(--azul_c);
+  color: var(--gris);
+  border-radius: 50%;
+  font-size: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+.image-upload-button:hover {
+  background-color: #0e67e1;
+  color: #ffffff;
+}
+.hidden {
+  display: none;
+}
+.title-input {
+  width: 40%;
+  padding: 10px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: var(--azul_p);
+}
+.title-input:focus {
+  outline: none;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.delete-button,
+.publish-button {
+  position: absolute;
+  width: 10%;
+  height: 30px;
+  border: 0;
+  font-size: 100%;
+  transition: all .3s;
+  cursor: pointer;
+  border: none;
+}
+.delete-button {
+  top: 120%;
+  left: 1%;
+  background-color: var(--rosa);
+  color: var(--gris);
+  margin-right: 10px;
+}
+.publish-button {
+  top: 65%;
+  left: 57%;
+  background-color: var(--verde);
+  color: var(--gris);
+}
+.publish-button:hover {
+  background-color: #2bc327;
+  color: #ffffff;
+}
+.delete-button:hover {
+  background-color: #b126be;
+  color: #ffffff;
+}
+.t_n {
+  color: #a8aeb8;
+  padding: 5px;
+  position: absolute;
+  left: 65%;
+  top: 0;
+}
+
+.formulario_registro {
+    margin: 2% 0 0 25%;
+}
+.contenedor_0 {
+    display: flex;
+    position: relative;
+    width: 65%;
+    background: linear-gradient(to top, #0656c5, #530e90);
+}
+.contenedor_00 {
+  width: 90%;
+  margin: 0 0 0 10%;
+  height: 500px;
+  background-color: #ffffff;
+  box-shadow: 5px 3px 10px #a7a7a7;
+}
+.contenedor_1, .contenedor_2, .contenedor_3 {
+    display: block;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor_1 {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    width: 45%;
+}
+.contenedor_2 {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 35%;
+}
+.contenedor_3 {
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  width: 30%;
+}
+.input {
+  width: 100%;
+  margin: 5px 0;
+  background-color: #c1d5f0;
+  border: 0;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.input:focus {
+  outline: none;
+}
+.div_c{
+  display: flex;
+  margin: 5px
+}
+.radio {
+  accent-color: #c1d5f0;
+  margin: 0 5% 0 0;
+}
+.contenedor_3 .label_r {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+.content-d {
+  width: 70%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+form {
+  width: 100%;
+}
+.image-upload-area {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.image-preview-container {
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  grid-gap: 10px;
+  height: 100px;
+  margin-left: 50px;
+}
+.image-preview {
+  height: 50px;
+}
+.main-image-preview {
+  width: 50%;
+  height: 100px;
+}
+.image-upload-button {
+  top: 90%;
+  left: 38%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+.title-input {
+  width: 40%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.delete-button,
+.publish-button {
+  width: 20%;
+  height: 30px;
+  border: 0;
+  font-size: 90%;
+}
+.delete-button {
+  top: 70%;
+  left: 83%;
+  margin-right: 10px;
+}
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+.content-d {
+  width: 70%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+form {
+  width: 100%;
+}
+.image-upload-area {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.image-preview-container {
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  grid-gap: 10px;
+  height: 100px;
+  margin-left: 50px;
+}
+.image-preview {
+  height: 50px;
+}
+.main-image-preview {
+  width: 25%;
+  height: 100px;
+}
+.image-upload-button {
+  top: 90%;
+  left: 19%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+.title-input {
+  width: 40%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.delete-button,
+.publish-button {
+  width: 15%;
+  height: 30px;
+  border: 0;
+  font-size: 90%;
+}
+.delete-button {
+  top: 70%;
+  left: 83%;
+  margin-right: 10px;
+}
+.publish-button {
+  left: 55%;
+}
+.formulario_registro {
+  font-size: 80%;
+}
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+.content-d {
+  width: 70%;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+form {
+  width: 100%;
+}
+.image-upload-area {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.image-preview-container {
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  grid-gap: 15px;
+  height: 150px;
+  margin-left: 50px;
+}
+.image-preview {
+  height: 80px;
+}
+.main-image-preview {
+  width: 25%;
+  height: 200px;
+}
+.image-upload-button {
+  top: 90%;
+  left: 21%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+.title-input {
+  width: 40%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.delete-button,
+.publish-button {
+  width: 15%;
+  height: 30px;
+  border: 0;
+  font-size: 90%;
+}
+.delete-button {
+  top: 70%;
+  left: 83%;
+  margin-right: 10px;
+}
+.publish-button {
+  left: 55%;
+}
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+.content-d {
+  width: 70%;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+form {
+  width: 100%;
+}
+.image-upload-area {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.image-preview-container {
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+  grid-gap: 15px;
+  height: 150px;
+  margin-left: 50px;
+}
+.image-preview {
+  height: 80px;
+}
+.main-image-preview {
+  width: 25%;
+  height: 200px;
+}
+.image-upload-button {
+  top: 90%;
+  left: 21%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+.title-input {
+  width: 40%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.delete-button,
+.publish-button {
+  width: 15%;
+  height: 30px;
+  border: 0;
+  font-size: 90%;
+}
+.delete-button {
+  top: 70%;
+  left: 83%;
+  margin-right: 10px;
+}
+.publish-button {
+  left: 55%;
+}
+}

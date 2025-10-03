@@ -1,0 +1,76 @@
+/* menu */
+nav{
+  background-color: #ffffff;
+  box-shadow: 5px 3px 10px #a7a7a7;
+}
+
+ul {
+  list-style-type: none;
+  padding: 1%;
+  margin: 0;
+  display: flex;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.inicio{
+  margin: auto 0 auto auto;
+  max-width: 40px;
+}
+
+ul a:hover {
+    color: #a01cad;
+    text-decoration: underline;
+}
+
+[aria-current="location"] {
+  color: #a01cad;
+  text-decoration: underline;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+ul li{
+  margin: 0 0 0 10px;
+  font-size: 55%;
+}
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+ul li{
+  margin: 0 0 0 20px;
+  font-size: 60%;
+}
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+ul li{
+  margin: 0 0 0 30px;
+  font-size: 70%;
+}
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+ul li{
+  margin: 0 0 0 40px;
+  font-size: 80%;
+}
+}
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+ul li{
+  margin: 0 0 0 45px;
+  font-size: 90%;
+}
+}
+
+@media (min-width: 1301px) {
+ul li{
+  margin: 0 0 0 50px;
+  font-size: 100%;
+}
+}

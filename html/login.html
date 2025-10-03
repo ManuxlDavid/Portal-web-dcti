@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portal_Web_DCTI/login</title>
+  <link rel="stylesheet" href="../css/css.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <main class="login-container">
+        <section class="logo-login">
+            <div class="logo-container">
+              <picture>
+                <source srcset="../img/img002.png">
+                <img src="../img/img2.png" width="20%" alt="logotipo" class="img">
+              </picture>
+                
+            </div>
+        </section>
+        <section class="login-form">
+            <form action="inicio_dashboard.html" class="login">
+                <header class="form-header">
+                    <h1 class="form-title">¡Bienvenido!</h1>
+                    <p class="form-subtitle">Inicia sesión</p>
+                </header>
+                <div class="form-group">
+                    <input type="text" id="username" name="username" class="input-login" placeholder="Usuario" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" class="input-login" placeholder="Contraseña" required>
+                </div>
+                <div class="form-actions-login">
+                  <input type="submit" value="Acceder" class="btn-login" />
+                </div>
+                <div class="form-footer">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                    <a href="#">¿No tienes cuenta? Regístrate</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
