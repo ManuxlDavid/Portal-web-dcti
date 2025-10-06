@@ -18,7 +18,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 2 2% 2% 2%;
   margin-bottom: 2%;
 }
 
@@ -51,6 +50,9 @@
 
 .titulo_noticia h2 {
   margin-right: 30px;
+}
+.redireccion {
+  text-decoration: none;
 }
 
 @media (max-width: 700px) {
